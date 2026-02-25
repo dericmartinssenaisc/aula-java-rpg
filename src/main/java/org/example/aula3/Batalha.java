@@ -45,9 +45,12 @@ public class Batalha {
         System.out.println("\n O que " + heroi.getNome() + " faz?");
         System.out.println(" [1] Atacar");
         System.out.println(" [2] Usar Poção ( " +heroi.getPocoes() + " restantes)");
+        System.out.println(" [3] User Item de Inventário");
         System.out.println(" Escolha: ");
 
         int escolha = lerEscolha();
+
+
 
         switch (escolha) {
             case 1:
@@ -58,6 +61,7 @@ public class Batalha {
             case 2:
                 heroi.usarPocao();
                 break;
+
             default:
                 System.out.println(" ❓ Opção inválida - turno perdido!!");
         }
